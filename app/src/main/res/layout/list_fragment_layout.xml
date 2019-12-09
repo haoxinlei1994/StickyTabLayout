@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.mrh.nested_scroller.child.NestedScrollDispatcherLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#33FFC4"
+            android:gravity="center_vertical"
+            android:paddingVertical="10dp"
+            android:text="这是一个普通的TextView，是Fragment中的元素，位于RecyclerView的顶部，但是它也可以具有嵌套滚动的能力"
+            android:textColor="#000" />
+    </com.mrh.nested_scroller.child.NestedScrollDispatcherLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

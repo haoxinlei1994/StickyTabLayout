@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mrh.nested_scroller.NestedScrollLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewpager.ViewPagerActivity">
+
+    <com.mrh.nested_scroller.child.NestedHeaderView
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/girl" />
+    </com.mrh.nested_scroller.child.NestedHeaderView>
+
+    <com.mrh.nested_scroller.child.NestedBodyView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.mrh.nested_scroller.child.NestedScrollDispatcherLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rg_tab"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#408ef5"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_tab1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="tab1"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_tab2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="tab2"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+            </RadioGroup>
+        </com.mrh.nested_scroller.child.NestedScrollDispatcherLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+    </com.mrh.nested_scroller.child.NestedBodyView>
+</com.mrh.nested_scroller.NestedScrollLayout>

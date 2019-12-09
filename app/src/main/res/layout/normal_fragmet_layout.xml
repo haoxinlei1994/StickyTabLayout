@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mrh.nested_scroller.child.NestedScrollDispatcherLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:text="这个布局是一个普通布局，都是普通的TextView、ImageView 等不具备滑动功能的控件，最外层布局使用 NestedScrollDispatcherLayout 帮助普通布局完成嵌套滑动的逻辑" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:text="This is a custom Text!!!" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_2" />
+
+</com.mrh.nested_scroller.child.NestedScrollDispatcherLayout>
