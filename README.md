@@ -1,5 +1,5 @@
-# NestedScrollLayout
-🔥或者叫做 StickyTabLayout ， 可以配合 RecyclerView、ViewPager、NestedScrollView、以及普通控件完成顶部吸附效果，整个布局均实现了触摸时跟随手指scroll 和 fling, 并处理了水平方向和垂直方向的滑动冲突。
+# StickyTabLayout
+🔥或者叫做 NestedScrollLayout ， 可以配合 RecyclerView、ViewPager、NestedScrollView、以及普通控件完成顶部吸附效果，整个布局均实现了触摸时跟随手指scroll 和 fling, 并处理了水平方向和垂直方向的滑动冲突。
 
 效果图如下：
 
