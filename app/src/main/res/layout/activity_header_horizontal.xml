@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mrh.nested_scroller.NestedScrollLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rv.RecyclerViewActivity">
+
+    <com.mrh.nested_scroller.child.NestedHeaderView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_img"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"></android.support.v7.widget.RecyclerView>
+    </com.mrh.nested_scroller.child.NestedHeaderView>
+
+    <com.mrh.nested_scroller.child.NestedBodyView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </com.mrh.nested_scroller.child.NestedBodyView>
+</com.mrh.nested_scroller.NestedScrollLayout>

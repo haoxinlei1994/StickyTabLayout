@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ns.NestedScrollViewActivity"></activity>
+        <activity android:name=".rv.HeaderHorizontalActivity"></activity>
+        <activity android:name=".ns.NestedScrollViewActivity" />
         <activity android:name=".viewpager.ViewPagerActivity" />
         <activity android:name=".rv.RecyclerViewActivity" />
         <activity android:name=".MainActivity">

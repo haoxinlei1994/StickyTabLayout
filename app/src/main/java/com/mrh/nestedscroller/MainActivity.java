@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.mrh.nestedscroller.ns.NestedScrollViewActivity;
+import com.mrh.nestedscroller.rv.HeaderHorizontalActivity;
 import com.mrh.nestedscroller.rv.RecyclerViewActivity;
 import com.mrh.nestedscroller.viewpager.ViewPagerActivity;
 
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mRvBtn;
     private Button mVpBtn;
     private Button mSvBtn;
+    private Button mHListBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +25,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mRvBtn = findViewById(R.id.btn_rv);
         mVpBtn = findViewById(R.id.btn_vp);
         mSvBtn = findViewById(R.id.btn_sv);
+        mHListBtn = findViewById(R.id.btn_horizontal_list_header);
         mRvBtn.setOnClickListener(this);
         mVpBtn.setOnClickListener(this);
         mSvBtn.setOnClickListener(this);
+        mHListBtn.setOnClickListener(this);
     }
 
     @Override
@@ -39,6 +43,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_sv:
                 startActivity(new Intent(this, NestedScrollViewActivity.class));
+                break;
+            case R.id.btn_horizontal_list_header:
+                startActivity(new Intent(this, HeaderHorizontalActivity.class));
                 break;
         }
     }
