@@ -6,7 +6,10 @@
 <img src="./images/image_rv.gif" width='150px'/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/image_vp_1.gif" width='150px'/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/image_vp_2.gif" width='150px'/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/image_ns.gif" width='150px'/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/image_h_header.gif" width='150px'/>
 
 ## 1. install
+
+```
 implementation 'com.mrh.nestedscroll:nested_scroller:1.0.0'
+```
 ## 2. 主要控件说明
 ### NestedScrollLayout
 继承自LinearLayout，默认方向为垂直方向。可作为应用中的最外层布局，内部只能且必须按顺序包含两个子View：NestedHeaderView、NestedBodyView.
