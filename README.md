@@ -27,7 +27,9 @@ implementation 'com.mrh.nestedscroll:nested_scroller:1.0.0'
         android:layout_height="wrap_content"
         android:orientation="vertical">
         
-        <!-- 自定义你的头部View -->
+        <!-- 自定义你的头部View, 如果是RecyclerView或者NestedScrollView，
+        需要在代码中设置 nestedScrollEnable = true，参考示例代码
+        -->
         
     </com.mrh.nested_scroller.child.NestedHeaderView>
 
@@ -35,7 +37,8 @@ implementation 'com.mrh.nestedscroll:nested_scroller:1.0.0'
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <!-- 自定义你的内容View -->
+        <!-- 自定义你的内容View, 如果是RecyclerView或者NestedScrollView，
+        需要在代码中设置 nestedScrollEnable = true，参考示例代码 -->
         
     </com.mrh.nested_scroller.child.NestedBodyView>
     
